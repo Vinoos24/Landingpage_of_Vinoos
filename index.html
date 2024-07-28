@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .marquee {
+            width: 80%;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            color: white; /* Menambahkan warna putih untuk teks judul */
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">SkYvIn</a>
+            </div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audio-video">Audio Video</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="beranda" class="background">
+            <div class="posisi">
+                <h1>Saya tidak tau kunci sukses itu apa, namun saya tau kunci gagal, "yaitu menyenangkan semua orang"</h1>
+                <h2>Ini adalah website pribadi saya</h2>
+                <p>Mari kita eksplorasi</p>
+                <div class="tombol">
+                    <button onclick="scrollToSection('profil')">Masuk</button>
+                    <button onclick="scrollToSection('berita')">Halaman Berita</button>
+                </div>
+            </div>
+        </div>
+        <div id="profil" class="background">
+            <div style="width: 75%; margin: auto; border: 5px solid #eee9e9; padding: 20px; box-shadow: 2px 2px 12px hsla(0, 100%, 100%, 0.895);">
+                <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                    Profil Lengkap Saya
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex: 1; border: 1px solid hsl(0, 100%, 100%); height: 300px; display: flex; align-items: center; justify-content: center; margin-right: 20px; overflow: hidden;">
+                        <img src="foto.jpeg" alt="Foto Profil" style="width: 100%; height: Auto;">
+                    </div>
+                    <div style="flex: 2;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Kampus :</td>
+                                <td>Politeknik Negeri Fakfak</td>
+                            </tr>
+                            <tr>
+                                <td>NIM :</td>
+                                <td>16323018</td>
+                            </tr>
+                            <tr>
+                                <td>Nama :</td>
+                                <td>Kevin Ananda Putra Talla</td>
+                            </tr>
+                            <tr>
+                                <td>Prodi :</td>
+                                <td>DIII Manajemen Informatika</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas :</td>
+                                <td>1A</td>
+                            </tr>
+                            <tr>
+                                <td>JK :</td>
+                                <td>Laki-laki</td>
+                            </tr>
+                            <tr>
+                                <td>Gol Darah :</td>
+                                <td>O</td>
+                            </tr>
+                            <tr>
+                                <td>Usia :</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>Hobi :</td>
+                                <td>Bermain Game & Memancing</td>
+                            </tr>
+                            <tr>
+                                <td>Ttl :</td>
+                                <td>Fakfak 11 Februari 2003</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat :</td>
+                                <td>Jl.Veteran</td>
+                            </tr>
+                            <tr>
+                                <td>Status :</td>
+                                <td>Belum Menikah</td>
+                            </tr>
+                            <tr>
+                                <td>Agama :</td>
+                                <td>Islam</td>
+                            </tr>
+                            <tr>
+                                <td>Asal sekolah :</td>
+                                <td>SMAN 1 Fakfak</td>
+                            </tr>
+                            <tr>
+                                <td>Cita-cita :</td>
+                                <td>Menjadi orang kaya</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="audio-video" class="background media">
+            <div class="posisi">
+                <h2>Audio Video</h2>
+                <video controls>
+                    <source src="TYpe-shi.mp4" type="video/mp4">
+                </video>
+                <div class="marquee"><span>PoP-Smoke for night</span></div>
+                <audio controls>
+                    <source src="Lagu.mp4" type="audio/mp4">
+                </audio>
+            </div>
+        </div>
+        <div id="tentang" class="background">
+            <div class="posisi">
+                <h1>Tentang</h1>
+                <p>Ini adalah bagian tentang penulis.</p>
+                <p align="left">Saya adalah mahasiswa di Politeknik Negeri Fakfak. Saya menjalani pendidikan 
+                    di Polinef untuk mengembangkan kemampuan dalam bidang teknologi dan pemrograman. 
+                    Saya sangat tertarik dengan perkembangan teknologi yang pesat saat ini.</p>
+
+                    <p>Di era yang serba digital ini, sulit untuk bersaing tanpa bantuan gadget yang memudahkan kita 
+                        mendapatkan informasi, hiburan, dan media pembelajaran secara online. Oleh karena itu, saya 
+                        memiliki ambisi besar untuk menjadi anak muda yang tidak gagap teknologi. Saya juga sangat 
+                        tertarik dengan gadget dan teknologi, namun hobi ini memerlukan dana yang cukup besar.</p>
+
+                        <p>Ambisi saya adalah menjadi orang kaya agar saya dapat menikmati kemudahan dan 
+                            fitur-fitur terbaru dari teknologi masa depan. Saya berharap dengan kemampuan
+                             dan ketekunan, saya dapat mencapai cita-cita ini.</p>
+            </div>
+        </div>
+        <div id="berita" class="background news">
+            <div class="posisi">
+                <h2>Berita</h2>
+                <div class="article">
+                    <h3></h3>
+                    <iframe src="https://www.kompas.com/tag/fakfak#google_vignette" width="100%" height="500px" frameborder="5"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audio-video">Audio Video</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+            <p>&copy; 2024 SkYvIn.</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
